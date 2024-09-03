@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textStyle="italic|bold"
+        android:text="Whatsapp Chat Loader">
+
+    </TextView>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"></View>
+
+
+    <EditText
+        android:id="@+id/edtText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter the number"
+        android:inputType="number">
+
+    </EditText>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        ></View>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load Chat"
+        android:backgroundTint="#95F499">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+</LinearLayout>
