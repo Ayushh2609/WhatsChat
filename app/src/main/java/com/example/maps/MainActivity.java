@@ -30,11 +30,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String number = edtText.getText().toString();
+                String number = edtText.getText().toString().trim();
                 if(number.length() != 10){
                     Toast.makeText(MainActivity.this, "Please enter the valid number...", Toast.LENGTH_SHORT).show();
                 }else{
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://wa.me/"+number));
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://wa.me/+91"+number));
                     startActivity(intent);
                 }
 
